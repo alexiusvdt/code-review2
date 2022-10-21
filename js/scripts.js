@@ -21,7 +21,7 @@ window.addEventListener("load", function() {
     let f = parseInt(document.querySelector("input#drink").value);
     console.log(f)
     let g = (b + c + d + e + f)
-    console.log("all vars", b, c, d, e, f, "and their sum", g)
+    console.log("all vars", a, b, c, d, e, f, "and their sum", g)
 
     if (g) {
       if(g < -8) {
