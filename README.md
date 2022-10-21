@@ -14,7 +14,7 @@
 ## Description
 A short survey that will help you on your programming journey.
 
-Check out the live [Portfolio Page](https://alexiusvdt.github.io/code-review2/)
+Check out the live [github pages site](https://alexiusvdt.github.io/code-review2/)
 
 ## Setup/Installation Requirements
 
@@ -34,7 +34,7 @@ Check out the live [Portfolio Page](https://alexiusvdt.github.io/code-review2/)
 * W3 schools
 * developer.mozilla.org
 * mdbootstrap.com
-* Susuwatari - feline debugger extrodinaire and moral support
+* Susuwatari - feline debugger extraodinaire and moral support
 
 
 ## License

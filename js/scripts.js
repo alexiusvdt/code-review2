@@ -7,7 +7,7 @@ window.addEventListener("load", function() {
     document.getElementById("cobol").setAttribute("class", "hidden");  
     };
 
-  // runs our form and evaluates a decision tree. Unhide comments below when debugging.
+  // runs form values and evaluates via decision tree. Unhide comments below when debugging.
   function languageTester() {;
     let a = document.querySelector("input#a").value;
     let b = parseInt(document.querySelector('input[type=checkbox][name=question2]:checked').value);
