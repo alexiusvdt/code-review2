@@ -5,3 +5,42 @@
 .smol{
   font-size:x-small;
 }
+
+body {
+  background-color: black;
+  font-family: monospace;
+}
+
+div {
+  background-color: whitesmoke;
+}
+
+div.question {
+  background-color: antiquewhite;
+  margin: 10px;
+  border: 3px solid black;
+  padding: 5px;
+  background-color: salmon;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.background {
+  color: whitesmoke;
+}
+
+.box{
+  margin: 12px;
+  border: 3px solid whitesmoke;
+  padding: 5px;
+  background-color: orangered;
+  box-sizing: border-box;
+  text-align: left;  
+}
+
+.button {
+  margin: 12px;
+  border: 5px solid black;
+  padding: 10px;
+  text-align: center;
+}

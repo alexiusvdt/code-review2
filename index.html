@@ -12,13 +12,102 @@
       <p>Many new developers spend hours each day agonizing about what programming language they should learn next.</p>
       <p>Take this short quiz and worry no longer! This scientifically proven<sup>*</sup> survey will set you on the right path!</p>
 
-    <form>
-      <!-- questions 1-6 (name & simple point values)       -->
-    </form>
-  </div>
-  <div>
-    <!-- hidden divs that reveal answers -->
-  </div>
-  <p class="smol"><sup>*</sup>actual science pending</p>
-</body>
+      <form id="survey" class="box"> 
+        <p id="error-message" class="hidden">Hey there sport, you did something goofy. Take another look.</p>
+        <div class="question">
+          <h2>Question 1</h1>
+          <label for="a">What is your name?</label><br>
+          <input id="a" type="text" required minlength="1" maxlength ="15">
+        </div>
+        <div class="question">
+          <h2>Question 2</h2>
+          <p>Where would you like to travel to?</p>
+          <span class="checkbox">
+            <input id="continent" type="checkbox" name="question2" value="-3">  
+            <label for="continent1">The Americas</label>
+            <input id="continent" type="checkbox" name="question2" value="-1">  
+            <label for="continent2">Europe</label>
+            <input id="continent" type="checkbox" name="question2" value="0">  
+            <label for="continent3">Africa</label>
+            <input id="continent" type="checkbox" name="question2" value="1">  
+            <label for="continent4">Asia</label>
+            <input id="continent" type="checkbox" name="question2" value="3">  
+            <label for="continent5">Antarctica</label>
+          </span>
+        </div>
+        <div class="question">
+          <h2>Question 3</h2>
+          <p>How much wood <strong>could</strong> a woodchuck chuck, if a woodchuck could chuck wood?</p>
+          <span class="radios">
+            <input id="chuck1" type="radio" name="question3" value="-2">  
+            <label for="chuck1">At least a pound</label>
+            <input id="chuck2" type="radio" name="question3" value="-1">  
+            <label for="chuck2">A fireplace cord's worth</label>
+            <input id="chuck3" type="radio" name="question3" value="0">  
+            <label for="chuck3">A rick's worth</label>
+            <input id="chuck4" type="radio" name="question3" value="1">  
+            <label for="chuck4">Yes</label>
+            <input id="chuck5" type="radio" name="question3" value="2" required>  
+            <label for="chuck5">Don't be silly, woodchucks wouldn't want to chuck wood, even if they could</label>
+          </span>
+        </div>
+        <div class="question">
+          <h2>Question 4</h2>
+          <p>It's been a long day, what's your take-out comfort food?</p>
+          <span class="radios">
+            <input id="food" type="radio" name="question4" value="-2">  
+            <label for="food">Anything fried</label>
+            <input id="food" type="radio" name="question4" value="-1">  
+            <label for="food">Burritos/Tacos</label>
+            <input id="food" type="radio" name="question4" value="0">  
+            <label for="food">Burgers</label>
+            <input id="food" type="radio" name="question4" value="1">  
+            <label for="food">Thai/Chinese</label>
+            <input id="food" type="radio" name="question4" value="2" required>  
+            <label for="food">Pizza</label>
+          </span>
+        </div>
+        <div class="question">
+          <h2>Question 5</h2>
+          <label for="slider">How do you feel about owls on a scale of 0 to 5?</label><br>
+          <input id="slider" type="range" min="-2" max="2" required>
+        </div>
+        <div class="question">
+          <h2>Question 6</h2>
+          <p>Which of the following would you order?</p>
+          <span class="radios">
+            <input id="drink" type="radio" name="question6" value="-2">  
+            <label for="drink">Sloe Gin Fizz</label>
+            <input id="drink" type="radio" name="question6" value="-1">  
+            <label for="drink">Whiskey Sour</label>
+            <input id="drink" type="radio" name="question6" value="0">  
+            <label for="drink">I don't drink alcohol</label>
+            <input id="drink" type="radio" name="question6" value="1">  
+            <label for="drink">Hemingway</label>
+            <input id="drink" type="radio" name="question6" value="2" required>  
+            <label for="drink">Boulevardier</label>
+          </span>
+        </div>
+        <button type="submit" class="button">Submit button</button>
+        <button type="reset" class="button">Reset entire form</button>
+      </form>
+      <!-- select these divs by id (getElementById(<target>)) and unhide them -->
+      <div id="ruby" class="hidden">
+        <h2>youve got ruby!</h1>
+      </div>
+      <div id="csharp" class="hidden">
+        <h2>You got c#</h1>
+      </div>
+      <div id="python" class="hidden">
+        <h2>You got Python</h1>
+      </div>
+      <div id="cobol" class="hidden">
+        <h2>You got...COBOL?!</h2>
+      </div>
+      <div id="invalid" class="hidden">
+        <h1>Whoops!</h1>
+        <p>There was something wrong with those results, try again</p> 
+      </div>
+    </div>
+  </body>
 </html>
