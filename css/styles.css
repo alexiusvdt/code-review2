@@ -44,3 +44,13 @@ div.question {
   padding: 10px;
   text-align: center;
 }
+
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  align-content: space-between;
+
+}

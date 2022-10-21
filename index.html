@@ -92,21 +92,38 @@
         <button type="reset" class="button">Reset entire form</button>
       </form>
       <!-- select these divs by id (getElementById(<target>)) and unhide them -->
-      <div id="ruby" class="hidden">
-        <h2>youve got ruby!</h1>
-      </div>
-      <div id="csharp" class="hidden">
-        <h2>You got c#</h1>
-      </div>
-      <div id="python" class="hidden">
-        <h2>You got Python</h1>
-      </div>
-      <div id="cobol" class="hidden">
-        <h2>You got...COBOL?!</h2>
-      </div>
-      <div id="invalid" class="hidden">
-        <h1>Whoops!</h1>
-        <p>There was something wrong with those results, try again</p> 
+        <!-- <div class="flex-container"> playing with flexboxes
+          <div class="box">1</div>
+          <div>2</div>
+          <div>3</div>
+        </div> 
+       -->
+      <div id="allresults" class="box">
+        <div id="ruby" class="hidden">
+          <h2>You got Ruby!</h1>
+          <p>Ruby is a dynamic, open source programming language with a focus on simplicity and productivity. It has an elegant syntax that is natural to read and easy to write.</p>
+          <p>Find more information at the <a href="https://www.ruby-lang.org/en/">official website</a></p>
+        </div>
+        <div id="csharp" class="hidden">
+          <h2>You got C#</h1>
+          <p>C# is a simple, modern, general-purpose, object-oriented programming language developed by Microsoft within its .NET initiative</p>
+          <p>Find more information at the <a href="https://learn.microsoft.com/en-us/dotnet/csharp/">official website</a></p>
+        </div>
+        <div id="python" class="hidden">
+          <h2>You got Python</h1>
+          <p>Python is a high-level, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation.</p>
+          <p>Find more information at the <a href="https://www.python.org/">official website</a></p>
+        </div>
+        <div id="cobol" class="hidden">
+          <h2>You got...COBOL?!</h2>
+          <p>COBOL (Common Business-Oriented Language) is a high-level programming language for business applications. It was the first popular language designed to be operating system-agnostic and is still in use in many financial and business applications today after more than 60 years of use.</p>
+          <p>Find more information at the <a href="https://www.ibm.com/docs/en/i/7.1?topic=languages-cobol">official website</a></p>
+        </div>
+        <div id="invalid" class="hidden">
+          <h1>Whoops!</h1>
+          <p>There was something wrong with those results, try again</p> 
+          <p>I dont even know how you'd get here, it should be impossible to fail through the entire decision tree!</p>
+        </div>
       </div>
     </div>
   </body>
