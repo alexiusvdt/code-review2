@@ -2,14 +2,14 @@
 
 #### By Alex Johnson
 
-#### a short code review project for javascript
+#### a short code review project for javascript (week 2)
 
 ## Technologies Used
 
 * HTML
 * CSS
 * javascript
-<!-- * Bootstrap (planned but not yet implemented) -->
+* Bootstrap
 
 ## Description
 A short survey that will help you on your programming journey.
@@ -34,7 +34,7 @@ Check out the live [Portfolio Page](https://alexiusvdt.github.io/code-review2/)
 * W3 schools
 * developer.mozilla.org
 * mdbootstrap.com
-* Susuwatari - moral support
+* Susuwatari - feline debugger extrodinaire and moral support
 
 
 ## License

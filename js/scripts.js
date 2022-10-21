@@ -1,5 +1,5 @@
 window.addEventListener("load", function() {
-  //building reset class
+  //reapplies "hidden" class to result divs upon resubmit and/or hard reset
   function resetClass() {;
     document.getElementById("ruby").setAttribute("class", "hidden");
     document.getElementById("csharp").setAttribute("class", "hidden");
@@ -7,7 +7,7 @@ window.addEventListener("load", function() {
     document.getElementById("cobol").setAttribute("class", "hidden");  
     };
 
-  // runs our form and evaluates a decision tree  
+  // runs our form and evaluates a decision tree. Unhide comments below when debugging.
   function languageTester() {;
     let a = document.querySelector("input#a").value;
     let b = parseInt(document.querySelector('input[type=checkbox][name=question2]:checked').value);
@@ -37,7 +37,8 @@ window.addEventListener("load", function() {
       };
     };
   };
-  // function backToOne() {
+  // resets fields function
+  // function hardReset() {
   //   document.getElementById("form").reset();
   // };
 
@@ -50,8 +51,9 @@ window.addEventListener("load", function() {
     languageTester();   
     // maybe have it print out the results for the user to verify?
   });
-  form.addEventListener("reset", function(event) {
-    event.preventDefault();
-    resetClass();
-  });
+  // form.addEventListener("reset", function(event) {
+  //   event.preventDefault();
+  //   resetClass();
+  //   hardReset();
+  // });
 });
