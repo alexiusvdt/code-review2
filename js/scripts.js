@@ -11,18 +11,18 @@ window.addEventListener("load", function() {
   function languageTester() {;
     let a = document.querySelector("input#a").value;
     let b = parseInt(document.querySelector('input[type=checkbox][name=question2]:checked').value);
-    console.log(b)
+    // console.log(b)
     let c = parseInt(document.querySelector('input[type=radio][name=question3]:checked').value);
-    console.log(c)
-    let d = parseInt(document.querySelector("input#food").value);
-    console.log(d)
+    // console.log(c)
+    let d = parseInt(document.querySelector("input[type=radio][name=question4]:checked").value);
+    // console.log(d)
     let e = parseInt(document.querySelector("input#slider").value);
-    console.log(e)
-    let f = parseInt(document.querySelector("input#drink").value);
-    console.log(f)
+    // console.log(e)
+    let f = parseInt(document.querySelector("input[type=radio][name=question6]:checked").value);
+    // console.log(f)
     let g = (b + c + d + e + f)
-    console.log("all vars", a, b, c, d, e, f, "and their sum", g)
-
+    // console.log("all vars", a, b, c, d, e, f, "and their sum", g)
+    document.getElementById("name").innerHTML = "Thanks " + a + "! You should learn:";
     if (g) {
       if(g < -8) {
         document.getElementById("cobol").removeAttribute("class");
@@ -37,9 +37,9 @@ window.addEventListener("load", function() {
       };
     };
   };
-  function backToOne() {
-    document.getElementById("form").reset();
-  };
+  // function backToOne() {
+  //   document.getElementById("form").reset();
+  // };
 
   // variable declaration
   let form = document.querySelector("form");
@@ -53,6 +53,5 @@ window.addEventListener("load", function() {
   form.addEventListener("reset", function(event) {
     event.preventDefault();
     resetClass();
-    backToOne();
   });
 });
