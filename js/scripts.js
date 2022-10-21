@@ -42,7 +42,7 @@ window.addEventListener("load", function() {
   //   document.getElementById("form").reset();
   // };
 
-  // variable declaration
+  // variable declaration for the listeners
   let form = document.querySelector("form");
   //creating the submit listener and specifying its function
   form.addEventListener("submit", function(event) {
