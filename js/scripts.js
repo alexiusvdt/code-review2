@@ -10,14 +10,18 @@ window.addEventListener("load", function() {
   // runs our form and evaluates a decision tree  
   function languageTester() {;
     let a = document.querySelector("input#a").value;
-    let b = parseInt(document.getElementById('input:checkbox[name="question2"]:checked').value);
-    let c = parseInt(document.getElementById("input:radio[name=question3]:checked").value);
+    let b = parseInt(document.querySelector('input[type=checkbox][name=question2]:checked').value);
+    console.log(b)
+    let c = parseInt(document.querySelector('input[type=radio][name=question3]:checked').value);
+    console.log(c)
     let d = parseInt(document.querySelector("input#food").value);
+    console.log(d)
     let e = parseInt(document.querySelector("input#slider").value);
+    console.log(e)
     let f = parseInt(document.querySelector("input#drink").value);
-    console.log('all assigned values in order', b, c, d, e, f)
+    console.log(f)
     let g = (b + c + d + e + f)
-    console.log("value of g", g)
+    console.log("all vars", b, c, d, e, f, "and their sum", g)
 
     if (g) {
       if(g < -8) {
