@@ -11,37 +11,28 @@
       <p class="lead">Many programmers old and new spend hours worrying about what language they should learn next.</p>
       <hr class="my-4">
       <p>Well <strong>fret not any longer</strong> my friends, for there is a tool that will point you to your future.</p>
-      <!-- <p class="lead">
-        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-      </p> -->
     </div>
-    <!-- <div>
-      <h1>Language Selector</h1>
-
-      <p>Many new developers spend hours each day agonizing about what programming language they should learn next.</p>
-      <p>Take this short quiz and worry no longer! This scientifically proven<sup>*</sup> survey will set you on the right path!</p>
-    </div> -->
     <div>
       <form id="survey" class="box"> 
         <p id="error-message" class="hidden">Hey there sport, you did something goofy. Take another look.</p>
         <div class="question">
-          <h2>Question 1</h1>
+          <h2>Question 1</h2>
           <label for="a">What is your name?</label><br>
-          <input id="a" type="text" required minlength="1" maxlength ="15">
+          <input id="a" type="text" required minlength="1" maxlength="15">
         </div>
         <div class="question">
           <h2>Question 2</h2>
           <p>Where would you like to travel to? (check all that apply)</p>
-          <span class="checkbox">
-            <input id="continent" type="checkbox" name="question2" value="-3">  
+          <span class="radios">
+            <input id="continent1" type="radio" name="question2" value="-3">  
             <label for="continent1">The Americas</label>
-            <input id="continent" type="checkbox" name="question2" value="-1">  
+            <input id="continent2" type="radio" name="question2" value="-1">  
             <label for="continent2">Europe</label>
-            <input id="continent" type="checkbox" name="question2" value="0">  
+            <input id="continent3" type="radio" name="question2" value="0">  
             <label for="continent3">Africa</label>
-            <input id="continent" type="checkbox" name="question2" value="1">  
+            <input id="continent4" type="radio" name="question2" value="1">  
             <label for="continent4">Asia</label>
-            <input id="continent" type="checkbox" name="question2" value="3">  
+            <input id="continent5" type="radio" name="question2" value="3" required>  
             <label for="continent5">Antarctica</label>
           </span>
         </div>
@@ -65,16 +56,16 @@
           <h2>Question 4</h2>
           <p>It's been a long day, what's your take-out comfort food?</p>
           <span class="radios">
-            <input id="food" type="radio" name="question4" value="-2">  
-            <label for="food">Anything fried</label>
-            <input id="food" type="radio" name="question4" value="-1">  
-            <label for="food">Burritos/Tacos</label>
-            <input id="food" type="radio" name="question4" value="0">  
-            <label for="food">Burgers</label>
-            <input id="food" type="radio" name="question4" value="1">  
-            <label for="food">Thai/Chinese</label>
-            <input id="food" type="radio" name="question4" value="2" required>  
-            <label for="food">Pizza</label>
+            <input id="food1" type="radio" name="question4" value="-2">  
+            <label for="food1">Anything fried</label>
+            <input id="food2" type="radio" name="question4" value="-1">  
+            <label for="food2">Burritos/Tacos</label>
+            <input id="food3" type="radio" name="question4" value="0">  
+            <label for="food3">Burgers</label>
+            <input id="food4" type="radio" name="question4" value="1">  
+            <label for="food4">Thai/Chinese</label>
+            <input id="food5" type="radio" name="question4" value="2" required>  
+            <label for="food5">Pizza</label>
           </span>
         </div>
         <div class="question">
@@ -86,16 +77,16 @@
           <h2>Question 6</h2>
           <p>Which of the following would you order?</p>
           <span class="radios">
-            <input id="drink" type="radio" name="question6" value="-2">  
-            <label for="drink">Sloe Gin Fizz</label>
-            <input id="drink" type="radio" name="question6" value="-1">  
-            <label for="drink">Whiskey Sour</label>
-            <input id="drink" type="radio" name="question6" value="0">  
-            <label for="drink">I don't drink alcohol</label>
-            <input id="drink" type="radio" name="question6" value="1">  
-            <label for="drink">Hemingway</label>
-            <input id="drink" type="radio" name="question6" value="2" required>  
-            <label for="drink">Boulevardier</label>
+            <input id="drink1" type="radio" name="question6" value="-2">  
+            <label for="drink1">Sloe Gin Fizz</label>
+            <input id="drink2" type="radio" name="question6" value="-1">  
+            <label for="drink2">Whiskey Sour</label>
+            <input id="drink3" type="radio" name="question6" value="0">  
+            <label for="drink3">I don't drink alcohol</label>
+            <input id="drink4" type="radio" name="question6" value="1">  
+            <label for="drink4">Hemingway</label>
+            <input id="drink5" type="radio" name="question6" value="2" required>  
+            <label for="drink5">Boulevardier</label>
           </span>
         </div>
         <button type="submit" class="button">Show me!</button>
@@ -103,7 +94,7 @@
       <div id="allresults" class="box">
         <h1 id="name"></h1>
         <div id="ruby" class="hidden">
-          <h2>Ruby!</h1>
+          <h2>Ruby!</h2>
           <p>Ruby is a dynamic, open source programming language with a focus on simplicity and productivity. It has an elegant syntax that is natural to read and easy to write.</p>
           <p>Ruby is also popular due to the prevalence of the web development framework Ruby on Rails.</p>
           <ul>Ruby is great for:
@@ -114,12 +105,11 @@
             <li>data processing</li>
             <li>Web scraping and crawling</li>
             <li>...and more!</li>
-
           </ul>
           <p>Find more information at the <a href="https://www.ruby-lang.org/en/">official website</a></p>
         </div>
         <div id="csharp" class="hidden">
-          <h2>C#!</h1>
+          <h2>C#!</h2>
           <p>C# is a simple, modern, general-purpose, object-oriented programming language developed by Microsoft.</p>
           <ul>C# is great for:
             <li>Website development</li>
@@ -130,7 +120,7 @@
           <p>Find more information at the <a href="https://learn.microsoft.com/en-us/dotnet/csharp/">official website</a></p>
         </div>
         <div id="python" class="hidden">
-          <h2>Python!</h1>
+          <h2>Python!</h2>
           <p>Python is a high-level, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation.</p>
           <ul>Python is great for:
             <li>Data analysis and machine learning</li>
@@ -154,7 +144,7 @@
           <p>Find more information at the <a href="https://www.ibm.com/docs/en/i/7.1?topic=languages-cobol">official website</a></p>
         </div>
         <div id="invalid" class="hidden">
-          <h1>Whoops!</h1>
+          <h2>Whoops!</h2>
           <p>There was something wrong with those results, try again</p> 
           <p>I dont even know how you'd get here, it should be impossible to fail through the entire decision tree!</p>
         </div>
