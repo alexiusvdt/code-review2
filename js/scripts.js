@@ -10,7 +10,7 @@ window.addEventListener("load", function() {
   // runs form values and evaluates via decision tree. Unhide comments below when debugging.
   function languageTester() {;
     let a = document.querySelector("input#a").value;
-    let b = parseInt(document.querySelector('input[type=checkbox][name=question2]:checked').value);
+    let b = parseInt(document.querySelector('input[type=radio][name=question2]:checked').value);
     // console.log(b)
     let c = parseInt(document.querySelector('input[type=radio][name=question3]:checked').value);
     // console.log(c)
@@ -37,23 +37,13 @@ window.addEventListener("load", function() {
       };
     };
   };
-  // resets fields function
-  // function hardReset() {
-  //   document.getElementById("form").reset();
-  // };
 
-  // variable declaration for the listeners
   let form = document.querySelector("form");
-  //creating the submit listener and specifying its function
   form.addEventListener("submit", function(event) {
     event.preventDefault();
     resetClass();
     languageTester();   
     // maybe have it print out the results for the user to verify?
   });
-  // form.addEventListener("reset", function(event) {
-  //   event.preventDefault();
-  //   resetClass();
-  //   hardReset();
-  // });
+
 });

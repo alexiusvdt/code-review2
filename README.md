@@ -24,7 +24,6 @@ Check out the live [github pages site](https://alexiusvdt.github.io/code-review2
 
 ## Known Bugs
 
-* question 2 was not required to submit & broke the page. Fix should be implemented in next commit(s)
 * If you find additional bugs not listed here, please email me at alex.johnson293@gmail.com with the subject **[_Repo Name_] Bug** and include:
   * BUG: _A brief description of the bug_
   * FIX: _Suggestion for solution (if you have one!)_
